@@ -27,24 +27,21 @@ void ofApp::getImageForText (string query)
 
     ofxJSONElement response;
     
-    if (!response.open(url))
-    {
-        ofLogNotice("ofApp::setup") << "Failed to parse JSON";
-        return;
-    }
-    
+    ofURLFileLoader fileLoader;
+    response.parse (fileLoader.get(url).data.getText());
+
     int numImages = response["data"].size();
     
     if (numImages > 0)
     {
-        int selection = ofRandom(0, numImages);
+        int selection = ofRandom(0, numImages-1);
         
         string imageUrl = response["data"][selection]["images"]["original"]["url"].asString();
         
         if (imageUrl.empty())
             return;
         
-        ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.gif");
+        ofHttpResponse resp = fileLoader.saveTo(imageUrl, "giphy.gif");
 
         decoder.decode("giphy.gif");
         file = decoder.getFile();
