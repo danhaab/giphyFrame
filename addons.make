@@ -1,1 +1,3 @@
 ofxGifDecoder
+ofxJSON
+ofxSimpleTimer

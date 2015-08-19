@@ -9,6 +9,270 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
+			<key>D49ABAC1DAB34DEB59977C9D</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxSimpleTimer.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxSimpleTimer/src/ofxSimpleTimer.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>298FFB7D88B99757E6AFB302</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>2F1B28BB2551E443EFD686DD</string>
+					<string>D49ABAC1DAB34DEB59977C9D</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>420F32517A633AA1246D65A4</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>298FFB7D88B99757E6AFB302</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxSimpleTimer</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>38BA747C7CB7F8F8913375B6</key>
+			<dict>
+				<key>fileRef</key>
+				<string>2F1B28BB2551E443EFD686DD</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>2F1B28BB2551E443EFD686DD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxSimpleTimer.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxSimpleTimer/src/ofxSimpleTimer.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>CCDC6F9CCF925CC402160B85</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>21BDE665988474F1B1F4D302</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>FB84AAF8D1B7A95266DB5C09</key>
+			<dict>
+				<key>fileRef</key>
+				<string>21BDE665988474F1B1F4D302</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>21BDE665988474F1B1F4D302</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>jsoncpp.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>2C7CF000B7B4F782C187C353</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>json.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxJSON/libs/jsoncpp/include/json/json.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>58AD3BD71B781D9BC25763C8</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>61313493CDB52744E22A604D</string>
+					<string>2C7CF000B7B4F782C187C353</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>json</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>D486FC87F063317BB47E9FAC</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>58AD3BD71B781D9BC25763C8</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>include</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>977A836DD2C489CCC5E330FF</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>D486FC87F063317BB47E9FAC</string>
+					<string>CCDC6F9CCF925CC402160B85</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>jsoncpp</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>F40E80CB2D443CBA9581DD03</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>977A836DD2C489CCC5E330FF</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>libs</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>61313493CDB52744E22A604D</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>json-forwards.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>26A541233BC6F736E758F718</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxJSONElement.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxJSON/src/ofxJSONElement.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>BEDFEE7400C58EA4E412B757</key>
+			<dict>
+				<key>fileRef</key>
+				<string>F2B099E6BD1199664C48B177</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>F2B099E6BD1199664C48B177</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxJSONElement.cpp</string>
+				<key>path</key>
+				<string>../../../addons/ofxJSON/src/ofxJSONElement.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>292AF6148769654D0DF26018</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>1645F56257269CD0356320BD</string>
+					<string>F2B099E6BD1199664C48B177</string>
+					<string>26A541233BC6F736E758F718</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>2865DAEF86B1907A704CA70B</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>292AF6148769654D0DF26018</string>
+					<string>F40E80CB2D443CBA9581DD03</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxJSON</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>1645F56257269CD0356320BD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxJSON.h</string>
+				<key>path</key>
+				<string>../../../addons/ofxJSON/src/ofxJSON.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>584FACA311C9BF5FE3605D44</key>
 			<dict>
 				<key>explicitFileType</key>
@@ -156,6 +420,8 @@
 				<key>children</key>
 				<array>
 					<string>99719E6DB4297ADE3590A54D</string>
+					<string>2865DAEF86B1907A704CA70B</string>
+					<string>420F32517A633AA1246D65A4</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -544,6 +810,15 @@
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>../../../addons/ofxGifDecoder/libs</string>
 						<string>../../../addons/ofxGifDecoder/src</string>
+						<string>../../../addons/ofxJSON/libs</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp/include</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp/include/json</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp/src</string>
+						<string>../../../addons/ofxJSON/src</string>
+						<string>src</string>
+						<string>../../../addons/ofxSimpleTimer/libs</string>
+						<string>../../../addons/ofxSimpleTimer/src</string>
 					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
@@ -604,6 +879,15 @@
 						<string>$(OF_CORE_HEADERS)</string>
 						<string>../../../addons/ofxGifDecoder/libs</string>
 						<string>../../../addons/ofxGifDecoder/src</string>
+						<string>../../../addons/ofxJSON/libs</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp/include</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp/include/json</string>
+						<string>../../../addons/ofxJSON/libs/jsoncpp/src</string>
+						<string>../../../addons/ofxJSON/src</string>
+						<string>src</string>
+						<string>../../../addons/ofxSimpleTimer/libs</string>
+						<string>../../../addons/ofxSimpleTimer/src</string>
 					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
@@ -666,6 +950,9 @@
 					<string>09E99B3E96043C4EBFC83EDC</string>
 					<string>4BED9D8652E20E547B58662D</string>
 					<string>3C66234958E3B20A5CC3A4F4</string>
+					<string>BEDFEE7400C58EA4E412B757</string>
+					<string>FB84AAF8D1B7A95266DB5C09</string>
+					<string>38BA747C7CB7F8F8913375B6</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>

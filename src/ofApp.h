@@ -3,6 +3,8 @@
 #include "ofMain.h"
 #include "ofxGifDecoder.h"
 #include "ofxGifFile.h"
+#include "ofxJSON.h"
+#include "ofxSimpleTimer.h"
 
 class ofApp : public ofBaseApp{
 
@@ -20,7 +22,7 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
-
+    void getImageForText (string query);
     
     ofxGifDecoder decoder;
     ofxGifFile file;
@@ -32,4 +34,8 @@ public:
     
     int screenHeight;
     int screenWidth;
+    
+    ofxSimpleTimer timer;
+    
+    void timerCompleteHandler( int &args ) ;
 };

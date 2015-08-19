@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>883AD020-E6E6-4ACF-B373-D6CA178F964D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>giphyFrame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6D00BA72614D943758D874F32183C18D2FBFB2AA</key>
+		<string>https://github.com/danhaab/giphyFrame.git</string>
+		<key>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</key>
+		<string>https://github.com/HeliosInteractive/ofxSimpleTimer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>giphyFrame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6D00BA72614D943758D874F32183C18D2FBFB2AA</key>
+		<string>../..</string>
+		<key>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</key>
+		<string>../../../../../addons/ofxSimpleTimer</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/danhaab/giphyFrame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6D00BA72614D943758D874F32183C18D2FBFB2AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6D00BA72614D943758D874F32183C18D2FBFB2AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>giphyFrame</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxSimpleTimer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

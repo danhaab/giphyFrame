@@ -3,19 +3,63 @@
 int frame = 0;
 //--------------------------------------------------------------
 void ofApp::setup(){
-    decoder.decode("giphy.gif");
-    file = decoder.getFile();
+    
+    getImageForText("funny+cat");
     
     lastUpdate = ofGetElapsedTimef();
     
-    float numFrames = file.getNumFrames();
-
-    duration = file.getDuration();
-    
-    frameRate =  duration /numFrames ;
-    
     screenHeight = ofGetScreenHeight();
     screenWidth = ofGetScreenWidth();
+
+    timer.setup( 15000 );
+    timer.start( true ) ;
+    
+    ofAddListener( timer.TIMER_COMPLETE , this, &ofApp::timerCompleteHandler ) ;
+}
+
+void ofApp::getImageForText (string query)
+{
+    string url = "http://api.giphy.com/v1/gifs/search?q=";
+    
+    url += query;
+    
+    url += "&api_key=dc6zaTOxFJmzC";
+
+    ofxJSONElement response;
+    
+    if (!response.open(url))
+    {
+        ofLogNotice("ofApp::setup") << "Failed to parse JSON";
+        return;
+    }
+    
+    int numImages = response["data"].size();
+    
+    if (numImages > 0)
+    {
+        int selection = ofRandom(0, numImages);
+        
+        string imageUrl = response["data"][selection]["images"]["original"]["url"].asString();
+        
+        if (imageUrl.empty())
+            return;
+        
+        ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.gif");
+
+        decoder.decode("giphy.gif");
+        file = decoder.getFile();
+
+        duration = file.getDuration();
+        
+        lastUpdate = ofGetElapsedTimef();
+        
+        frame = 0;
+        
+    }
+
+    
+    
+    
     
 }
 
@@ -30,14 +74,22 @@ void ofApp::update(){
         frame++;
     }
 
-    if (frame > file.getNumFrames())
+    if (frame > file.getNumFrames()-1)
         frame=0;
+    
+    timer.update( ) ;
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
     file.drawFrame(frame, 0, 0, screenWidth, screenHeight);
+    
+}
+
+void ofApp::timerCompleteHandler( int &args )
+{
+    getImageForText("funny+cat");
     
 }
 
