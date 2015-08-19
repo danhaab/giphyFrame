@@ -2,7 +2,8 @@
 
 int frame = 0;
 //--------------------------------------------------------------
-void ofApp::setup(){
+void ofApp::setup()
+{
     
     getImageForText("funny+cat");
     
@@ -27,8 +28,10 @@ void ofApp::getImageForText (string query)
 
     ofxJSONElement response;
     
-    ofURLFileLoader fileLoader;
-    response.parse (fileLoader.get(url).data.getText());
+    if (!response.open(url))
+    {
+        ofLogNotice("ofApp::setup") << "Failed to parse JSON";
+    }
 
     int numImages = response["data"].size();
     
@@ -41,7 +44,7 @@ void ofApp::getImageForText (string query)
         if (imageUrl.empty())
             return;
         
-        ofHttpResponse resp = fileLoader.saveTo(imageUrl, "giphy.gif");
+        ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.gif");
 
         decoder.decode("giphy.gif");
         file = decoder.getFile();
@@ -54,9 +57,6 @@ void ofApp::getImageForText (string query)
         
     }
 
-    
-    
-    
     
 }
 
@@ -89,6 +89,7 @@ void ofApp::timerCompleteHandler( int &args )
     getImageForText("funny+cat");
     
 }
+
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
