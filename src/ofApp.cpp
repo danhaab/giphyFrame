@@ -5,22 +5,27 @@ int frame = 0;
 void ofApp::setup()
 {
     
-    getImageForText("funny+cat");
+    searchCriteria = "funny+cat";
+    getImageForText(searchCriteria);
     
     lastUpdate = ofGetElapsedTimef();
     
     screenHeight = ofGetScreenHeight();
     screenWidth = ofGetScreenWidth();
 
-    timer.setup( 15000 );
+    timer.setup( 1000 );
     timer.start( true ) ;
     
+    randomizerTimer.setup( 15000 );
+    randomizerTimer.start( true ) ;
+    
     ofAddListener( timer.TIMER_COMPLETE , this, &ofApp::timerCompleteHandler ) ;
-    ofAddListener( stt.COMMAND_COMPLETE, this, &ofApp::sttCompleteHandler );
+    ofAddListener( randomizerTimer.TIMER_COMPLETE , this, &ofApp::randomizerTimerCompleteHandler ) ;
+
     
     gifPlayer.setLoopState(OF_LOOP_NORMAL);
     
-    stt.recordAndConvert();
+    //stt.recordAndConvert();
 }
 
 void ofApp::getImageForText (string query)
@@ -63,7 +68,11 @@ void ofApp::update()
 {
     
     gifPlayer.update();
-    timer.update( ) ;
+    
+    timer.update( );
+    
+    randomizerTimer.update();
+    
 }
 
 //--------------------------------------------------------------
@@ -71,17 +80,33 @@ void ofApp::draw()
 {    
     gifPlayer.draw(0, 0, screenWidth, screenHeight);
     
-    
-    ofSetColor(255, 255, 0);
-    for(int i = 0; i < recognizedWords.size(); i++){
-        ofDrawBitmapString(recognizedWords[i], 10, 10 + i * 14); //draw each lines of text 14 pixels bellow the other
-    }
-    
 }
-
+void ofApp::randomizerTimerCompleteHandler( int &args )
+{
+    getImageForText(searchCriteria);
+}
 void ofApp::timerCompleteHandler( int &args )
 {
-    getImageForText("funny+cat");
+    
+ 
+    ifstream fin;
+    
+    ofFile file;
+    
+    file.open("stt.txt");
+    
+    if (!file.exists())
+        return;
+    
+    ofBuffer buffer = file.readToBuffer();
+    
+    string searchCriteria = buffer.getFirstLine();
+        
+    ofStringReplace(searchCriteria, " ", "+");
+    
+    getImageForText(searchCriteria);
+        
+    file.remove();
     
 }
 
@@ -91,18 +116,17 @@ void ofApp::sttCompleteHandler( int &args )
     
     fin.open( ofToDataPath("stt.txt").c_str() );
     
-    recognizedWords.clear();
+    //recognizedWords.clear();
     
     while(fin!=NULL)
     {
         string str;
         getline(fin, str);
-        recognizedWords.push_back(str);
+        
+        //recognizedWords.push_back(str);
         
         remove(ofToDataPath("stt.txt").c_str());
     }
-    
-    
     
     stt.recordAndConvert();
 }

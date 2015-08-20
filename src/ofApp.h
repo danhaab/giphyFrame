@@ -33,8 +33,10 @@ public:
     int screenWidth;
     
     ofxSimpleTimer timer;
+    ofxSimpleTimer randomizerTimer;
     
     void timerCompleteHandler( int &args );
+    void randomizerTimerCompleteHandler ( int &args );
     
     void sttCompleteHandler( int &args );
     
@@ -42,5 +44,6 @@ public:
     
     speechToText stt;
     
-    vector<string> recognizedWords;
+    string searchCriteria;
+    //vector<string> recognizedWords;
 };

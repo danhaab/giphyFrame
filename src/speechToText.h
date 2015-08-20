@@ -10,7 +10,7 @@ public:
     
     void recordAndConvert(){
         stopThread();
-        startThread( false, false );
+        startThread( false );
     }
     
     // CALL THIS DIRECTLY FOR BLOCKING COMMAND
