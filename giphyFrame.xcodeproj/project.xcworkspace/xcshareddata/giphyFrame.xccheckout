@@ -22,7 +22,7 @@
 		<key>6D00BA72614D943758D874F32183C18D2FBFB2AA</key>
 		<string>../..</string>
 		<key>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</key>
-		<string>../../../../../addons/ofxSimpleTimer</string>
+		<string>../../../addons/ofxSimpleTimer</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/danhaab/giphyFrame.git</string>

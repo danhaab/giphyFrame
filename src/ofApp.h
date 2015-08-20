@@ -1,10 +1,10 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxGifDecoder.h"
-#include "ofxGifFile.h"
 #include "ofxJSON.h"
 #include "ofxSimpleTimer.h"
+#include "speechToText.h"
+
 
 class ofApp : public ofBaseApp{
 
@@ -23,9 +23,6 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     void getImageForText (string query);
-    
-    ofxGifDecoder decoder;
-    ofxGifFile file;
 		
     float lastUpdate;
     float frameRate;
@@ -37,7 +34,13 @@ public:
     
     ofxSimpleTimer timer;
     
-    void timerCompleteHandler( int &args ) ;
+    void timerCompleteHandler( int &args );
+    
+    void sttCompleteHandler( int &args );
     
     ofVideoPlayer gifPlayer;
+    
+    speechToText stt;
+    
+    vector<string> recognizedWords;
 };
