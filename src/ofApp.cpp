@@ -16,6 +16,8 @@ void ofApp::setup()
     timer.start( true ) ;
     
     ofAddListener( timer.TIMER_COMPLETE , this, &ofApp::timerCompleteHandler ) ;
+    
+    gifPlayer.setLoopState(OF_LOOP_NORMAL);
 }
 
 void ofApp::getImageForText (string query)
@@ -44,21 +46,9 @@ void ofApp::getImageForText (string query)
         if (imageUrl.empty())
             return;
         
-        //ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.gif");
-        
-        //ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.mp4");
-        
         gifPlayer.loadMovie(imageUrl);
         
         gifPlayer.play();
-        /*decoder.decode("giphy copy.gif");
-        file = decoder.getFile();
-
-        duration = file.getDuration();
-        
-        lastUpdate = ofGetElapsedTimef();
-        
-        frame = 0;*/
         
     }
 
