@@ -39,21 +39,26 @@ void ofApp::getImageForText (string query)
     {
         int selection = ofRandom(0, numImages-1);
         
-        string imageUrl = response["data"][selection]["images"]["original"]["url"].asString();
+        string imageUrl = response["data"][selection]["images"]["original"]["mp4"].asString();
         
         if (imageUrl.empty())
             return;
         
-        ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.gif");
-
-        decoder.decode("giphy.gif");
+        //ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.gif");
+        
+        //ofHttpResponse resp = ofSaveURLTo(imageUrl, "giphy.mp4");
+        
+        gifPlayer.loadMovie(imageUrl);
+        
+        gifPlayer.play();
+        /*decoder.decode("giphy copy.gif");
         file = decoder.getFile();
 
         duration = file.getDuration();
         
         lastUpdate = ofGetElapsedTimef();
         
-        frame = 0;
+        frame = 0;*/
         
     }
 
@@ -62,6 +67,8 @@ void ofApp::getImageForText (string query)
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    gifPlayer.update();
     
     float currentTime = ofGetElapsedTimef();
     
@@ -80,7 +87,9 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    file.drawFrame(frame, 0, 0, screenWidth, screenHeight);
+    //file.drawFrame(frame, 0, 0, screenWidth, screenHeight);
+    
+    gifPlayer.draw(0, 0, screenWidth, screenHeight);
     
 }
 

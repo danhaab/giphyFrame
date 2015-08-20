@@ -38,4 +38,6 @@ public:
     ofxSimpleTimer timer;
     
     void timerCompleteHandler( int &args ) ;
+    
+    ofVideoPlayer gifPlayer;
 };
