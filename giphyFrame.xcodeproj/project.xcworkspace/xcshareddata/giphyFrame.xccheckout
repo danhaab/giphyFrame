@@ -5,24 +5,52 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>883AD020-E6E6-4ACF-B373-D6CA178F964D</string>
+	<string>0A9AE77C-0ACF-4C76-8CD0-FC7404D397A7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>giphyFrame</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>4401B78D6A43C47BEBBD941DAE88FAC3E6BE9980</key>
+		<string>https://github.com/bakercp/ofxNetworkUtils.git</string>
 		<key>6D00BA72614D943758D874F32183C18D2FBFB2AA</key>
 		<string>https://github.com/danhaab/giphyFrame.git</string>
+		<key>6D6FDB373C9A9EB614FB047E30EC71CD5377F13C</key>
+		<string>https://github.com/bakercp/ofxSSLManager.git</string>
+		<key>6DBA07F83F7AF99DB5F116332E6446603283BF4C</key>
+		<string>https://github.com/bakercp/ofxHTTP.git</string>
+		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
+		<string>https://github.com/arturoc/ofxHttpUtils.git</string>
 		<key>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</key>
 		<string>https://github.com/HeliosInteractive/ofxSimpleTimer.git</string>
+		<key>CA29DB320F881B85D76220FC5498A4D1FA4F037C</key>
+		<string>https://github.com/bakercp/ofxIO.git</string>
+		<key>CC64F4963C935629E4EEDB8221C0DA9B68D2313F</key>
+		<string>https://github.com/bakercp/ofxMediaType.git</string>
+		<key>CE427DFEAC7CF46E0343E32288BC15C14F0689BB</key>
+		<string>https://github.com/bakercp/ofxTaskQueue.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>giphyFrame.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>4401B78D6A43C47BEBBD941DAE88FAC3E6BE9980</key>
+		<string>../../../addons/ofxNetworkUtils</string>
 		<key>6D00BA72614D943758D874F32183C18D2FBFB2AA</key>
 		<string>../..</string>
+		<key>6D6FDB373C9A9EB614FB047E30EC71CD5377F13C</key>
+		<string>../../../addons/ofxSSLManager</string>
+		<key>6DBA07F83F7AF99DB5F116332E6446603283BF4C</key>
+		<string>../../../addons/ofxHTTP</string>
+		<key>82C2DA8EC60CC36BD4CBE078AD41475599400228</key>
+		<string>../../../addons/ofxHttpUtils</string>
 		<key>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</key>
 		<string>../../../addons/ofxSimpleTimer</string>
+		<key>CA29DB320F881B85D76220FC5498A4D1FA4F037C</key>
+		<string>../../../addons/ofxIO</string>
+		<key>CC64F4963C935629E4EEDB8221C0DA9B68D2313F</key>
+		<string>../../../addons/ofxMediaType</string>
+		<key>CE427DFEAC7CF46E0343E32288BC15C14F0689BB</key>
+		<string>../../../addons/ofxTaskQueue</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/danhaab/giphyFrame.git</string>
@@ -44,9 +72,65 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6DBA07F83F7AF99DB5F116332E6446603283BF4C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxHTTP</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82C2DA8EC60CC36BD4CBE078AD41475599400228</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxHttpUtils</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA29DB320F881B85D76220FC5498A4D1FA4F037C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxIO</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC64F4963C935629E4EEDB8221C0DA9B68D2313F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxMediaType</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4401B78D6A43C47BEBBD941DAE88FAC3E6BE9980</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxNetworkUtils</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>9819D3CC5E008A062413D8D2B7CAE69A800A4D90</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ofxSimpleTimer</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6D6FDB373C9A9EB614FB047E30EC71CD5377F13C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxSSLManager</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE427DFEAC7CF46E0343E32288BC15C14F0689BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxTaskQueue</string>
 		</dict>
 	</array>
 </dict>

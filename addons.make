@@ -1,3 +1,10 @@
 ofxGifDecoder
 ofxJSON
 ofxSimpleTimer
+ofxHttpUtils
+ofxHTTP
+ofxIO
+ofxMediaType
+ofxNetworkUtils
+ofxSSLManager
+ofxTaskQueue

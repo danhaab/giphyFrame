@@ -4,7 +4,9 @@
 #include "ofxJSON.h"
 #include "ofxSimpleTimer.h"
 #include "speechToText.h"
+#include "ofxHttp.h"
 
+using namespace ofx::HTTP;
 
 class ofApp : public ofBaseApp{
 
@@ -38,6 +40,8 @@ public:
     void timerCompleteHandler( int &args );
     void randomizerTimerCompleteHandler ( int &args );
     
+    //void bingResponseHandler(ofxHttpResponse & response);
+    
     void sttCompleteHandler( int &args );
     
     ofVideoPlayer gifPlayer;
@@ -45,5 +49,13 @@ public:
     speechToText stt;
     
     string searchCriteria;
-    //vector<string> recognizedWords;
+
+    string responseMessage;
+    string request;
+    string actionUrl;
+    
+    DefaultClient sttClient;
+    Context sttContext;
+    
+    
 };
